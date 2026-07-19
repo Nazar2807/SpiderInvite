@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Запрошення</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ДОЩ -->
+
+<canvas id="rain"></canvas>
+
+<!-- ФОН -->
+
+<div class="background">
+
+<div class="cityGlow"></div>
+
+<div class="gradient"></div>
+
+</div>
+
+<!-- ПАВУК -->
+
+<div id="spiderContainer">
+
+
+<div id="rope"></div>
+
+<div id="spider">
+<svg width="70" height="70" viewBox="0 0 100 100">
+
+<ellipse cx="50" cy="60" rx="18" ry="22" fill="#111"/>
+
+<circle cx="50" cy="34" r="12" fill="#111"/>
+
+<line x1="40" y1="55" x2="15" y2="42" stroke="#111" stroke-width="3"/>
+<line x1="40" y1="58" x2="14" y2="58" stroke="#111" stroke-width="3"/>
+<line x1="40" y1="62" x2="15" y2="76" stroke="#111" stroke-width="3"/>
+<line x1="40" y1="66" x2="22" y2="90" stroke="#111" stroke-width="3"/>
+
+<line x1="60" y1="55" x2="85" y2="42" stroke="#111" stroke-width="3"/>
+<line x1="60" y1="58" x2="86" y2="58" stroke="#111" stroke-width="3"/>
+<line x1="60" y1="62" x2="85" y2="76" stroke="#111" stroke-width="3"/>
+<line x1="60" y1="66" x2="78" y2="90" stroke="#111" stroke-width="3"/>
+
+</svg>
+</div>
+
+</div>
+
+<!-- КАРТКА №1 -->
+
+<section class="card active" id="page1">
+
+<h1>
+
+Дякую, що відкрила 😊
+
+</h1>
+
+<p>
+
+Сподіваюся, подарунок хоч трохи підняв тобі настрій.
+
+</p>
+
+<p>
+
+І в мене є ще одна маленька пропозиція...
+
+</p>
+
+<button id="continueBtn">
+
+Далі
+
+</button>
+
+</section>
+
+<!-- КАРТКА №2 -->
+
+<section class="card hidden" id="page2">
+
+<h2>
+
+🎬 Людина-павук
+
+</h2>
+
+<p>
+
+Хочу запросити тебе провести разом вечір.
+
+</p>
+
+<p>
+
+Якщо ти не проти —
+
+давай сходимо разом у кіно. 🙂
+
+</p>
+
+<button id="acceptBtn">
+
+Прийняти запрошення
+
+</button>
+
+</section>
+
+<!-- КАРТКА №3 -->
+
+<section class="card hidden" id="page3">
+
+<div class="success">
+
+✅
+
+</div>
+
+<h2>
+
+Запрошення підтверджено
+
+</h2>
+
+<p>
+
+Дякую 😊
+
+</p>
+
+<p>
+
+Тоді зустрічаємось
+
+</p>
+
+<div class="meeting">
+
+📍 Лебедине озеро
+
+<br>
+
+🕕 18:20
+
+</div>
+
+<p>
+
+Після цього вирушимо
+
+на
+
+<strong>
+
+«Людину-павука»
+
+</strong>
+
+🎬
+
+</p>
+
+<button id="finishBtn">
+
+Готово
+
+</button>
+
+</section>
+
+<audio id="webSound" src="assets/sounds/web.mp3" preload="auto"></audio>
+
+<audio id="bgMusic" src="assets/sounds/ambient.mp3" loop></audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
