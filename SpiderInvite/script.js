@@ -214,6 +214,14 @@ function createWeb(){
 
 acceptBtn.onclick = () => {
 
+    fetch("https://spiderinvitebot.onrender.com/accepted", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({})
+});
+    
     webSound.currentTime = 0;
     webSound.play();
 
